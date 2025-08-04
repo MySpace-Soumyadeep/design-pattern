@@ -10,10 +10,12 @@ This repository contains examples of various design patterns implemented in Java
   - Contains: `index.js`, `index_pp.js`, `scout_prototype.js`, `Shopper.js`, etc.
 - `creational-patterns/FactoryPattern/` — Demonstrates the Factory pattern for flexible object creation.
   - Contains: `Employee.js`, `Shopper.js`, `userFactory.js`, `index.js`, `notes.txt`, etc.
-- More pattern folders will be added here (e.g., `observer/`, `strategy/`, etc.)
+- `behavioral-patterns/observerPattern/` — Demonstrates the Observer pattern for event-driven programming.
+  - Contains: `index.js`, `notes.txt`, etc.
+- More pattern folders will be added here (e.g., `strategy/`, etc.)
 
 ## How to Use
-1. Navigate to the folder for the pattern you want to explore (e.g., `singleton`, `prototypePattern`, `creational-patterns/FactoryPattern`).
+1. Navigate to the folder for the pattern you want to explore (e.g., `singleton`, `prototypePattern`, `creational-patterns/FactoryPattern`, `behavioral-patterns/observerPattern`).
 2. Follow the instructions in the folder's README (if available) or run the main entry point (usually `index.js`).
 3. Example for Singleton:
    ```powershell
@@ -30,6 +32,11 @@ This repository contains examples of various design patterns implemented in Java
    cd creational-patterns/FactoryPattern
    node index.js
    ```
+6. Example for Observer:
+   ```powershell
+   cd behavioral-patterns/observerPattern
+   node index.js
+   ```
 
 ## About the Singleton Example
 - The `Logger` class is intended to be used as a singleton, but the current implementation does **not** enforce a true singleton. Each `new Logger()` creates a new instance. To enforce a singleton, export a single instance from `Logger.js` instead of the class itself.
@@ -39,6 +46,9 @@ This repository contains examples of various design patterns implemented in Java
 
 ## About the Factory Example
 - The `FactoryPattern` folder shows how to centralize and simplify object creation. Instead of using constructors directly, a factory function or class creates different types of users (like Employee, Shopper, Manager, Developer, Distributor, etc.), making the code easier to scale and maintain.
+
+## About the Observer Example
+- The `observerPattern` folder demonstrates the Observer pattern, which allows objects to subscribe to and react to events or changes in other objects. This is useful for event-driven programming and decoupling components.
 
 ---
 Created August 2025
