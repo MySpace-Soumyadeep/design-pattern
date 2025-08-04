@@ -1,0 +1,2 @@
+now here we can see all 6 logs since we are sharing the same instance of logger. 
+check in logger file for Singleton file

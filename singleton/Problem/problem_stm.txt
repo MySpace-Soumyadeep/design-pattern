@@ -1,0 +1,4 @@
+At the end we are logining how many logs we have in totl. and we are loging those, 
+and we can see it only logs for index file coz for other two classes we are creating a new instance.
+
+so when we have this type of problem, singleton can come into picture

@@ -1,0 +1,4 @@
+The idea is here that when we run Logger file here, it will run once, create new instance of the logger, and save
+it in cache.
+Thant means node js will automatically handle exporting the same instance of logger to every other module
+that wants to consume it.
