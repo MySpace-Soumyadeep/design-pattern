@@ -1,0 +1,9 @@
+Define an interface for creating an object, but let subclasses decide which class to instantiate.
+The Factory Pattern lets a class defer instantiation to subclasses.
+
+In the index file, we are currently using two classes directly. Using these constructors directly is fine for a small app.
+However, as the app scales and we need more types of users (like Manager, Developer, Distributor, etc.),
+directly using constructors everywhere becomes error-prone and hard to maintain.
+
+If you forget to update every place where a new type is needed, you may get errors (missing imports, undefined classes, etc.).
+The Factory Pattern solves this by centralizing object creation logic, making it easier to add new types and reducing the risk of such errors.
